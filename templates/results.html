@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Result
+{% endblock %}
+
+{% block main %}
+
+    <div class="container">
+        <div class=" d-flex justify-content-center heading-image">
+            <img src="static/images/{{ result }}.png" alt="{{ result }}" height=160px width=auto />
+        </div>
+        <div class="d-flex justify-content-center">Your result is:</div>
+        <div class="d-flex justify-content-center">
+            <span class="btn btn-success btn-lg" id="result">{{ outcome }}</span>
+        </div>
+        <div class= "form-group row">
+            <div class="col-12 d-flex justify-content-center mx-auto">
+                {% if type == "coin" %}
+                    <a href="coin" class="btn btn-dark d-flex justify-content-center choose-button">Flip Again?</a>
+                {% elif type == "dice" %}
+                    <a href="dice" class="btn btn-dark d-flex justify-content-center choose-button">Roll Again?</a>
+                {% elif type == "custom" %}
+                    <a href="custom" class="btn btn-dark d-flex justify-content-center choose-button">Choose Again?</a>
+                {% elif type == "ball" %}
+                    <a href="ball" class="btn btn-dark d-flex justify-content-center choose-button">Ask Again?</a>
+                {% endif %}
+            </div>
+        </div>
+    </div>
+
+
+{% endblock %}

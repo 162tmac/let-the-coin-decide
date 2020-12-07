@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Custom
+{% endblock %}
+
+{% block main %}
+     <div class="container">
+        <div class="d-flex justify-content-center heading-image"><img src="static/images/questions.png" height=160px width=auto /></div><br>
+        <form action="custom" method="POST">
+            <div class= "form-group row d-flex justify-content-center">
+                <div class="col-12 col-sm-6 col-md-4 choice">
+                    <div class="custom-choices">
+                        <label for="choices" class="choice-label">Number of choices (2-100):</label>
+                        <input class="choice-field" type="number" id="choices" name="choices" min="2" max="100">
+                    </div>
+                </div>
+            </div>
+            <div class= "form-group row">
+                <div class="col-12 d-flex justify-content-center mx-auto">
+                    <input type="submit" class="btn btn-dark choose-button" value="Submit">
+                </div>
+            </div>
+        </form>
+    </div>
+{% endblock %}

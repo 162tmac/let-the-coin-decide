@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Staatliches&display=swap');
+
+* {
+    margin:0;
+    padding:0;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Roboto' ,sans-serif;
+    background-color: #161925;
+    color: #000;
+}
+
+.main-content {
+    background-color: #fafafa;
+    border-radius: 5rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+    padding: 1em;
+    min-height: 80vh;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ NavBar*/
+
+.logo-image {
+    font-size: 1rem;
+    height: 30px;
+    width: auto;
+}
+
+.logo-text {
+    text-transform: uppercase;
+    letter-spacing: 0.4ch;
+    font-weight: 600;
+    font-family: 'Staatliches';
+    font-size: 1.5rem;
+    color: #161925;
+}
+
+.nav-link {
+    font-family: 'Lato';
+    font-weight: 500;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Landing Page*/
+
+.landing {
+    background-color: #C1C6CC;
+    background-image: url('../images/coin.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-family:'Lato' ,sans-serif;
+    padding: 5em;
+}
+
+.landing-heading > h1 {
+    font-family: 'Staatliches';;
+}
+
+.landing .landing-footer {
+    bottom: 5rem;
+    position: fixed;
+}
+
+.landing-footer > hr{
+    width:50%;
+    margin:1em auto;
+}
+
+/*~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~ Index Page */
+
+.row {
+    margin:0;
+}
+
+#coin-result {
+    border-radius: 10px;
+    border: 3px solid black;
+}
+
+.card {
+    border-radius: 5%;
+}
+
+.card:hover {
+    box-shadow: 0px 0px 3em 0px rgba(73,159,104,1);
+    transition: .5s ease;
+}
+
+.card img {
+    height:12em;
+    width:auto;
+}
+
+.card-title {
+    font-family: 'Lato';
+}
+
+.index-heading {
+    margin-bottom: 1.5rem;
+    font-family: 'Lato';
+    font-weight: 900;
+}
+
+h2, .custom-choices {
+    text-align:center;
+}
+
+.card-img-top {
+    width: 100%;
+    object-fit: cover;
+}
+
+.heading-image {
+    margin-top: 2em;
+    margin-bottom: 3em;
+}
+
+.heading-image > .rotate {
+    background-color: #fafafa;
+    animation: rotate360 1.2s linear infinite;
+    animation-play-state: paused;
+}
+
+.heading-image  > .rotate:hover {
+    animation-play-state: running;
+}
+
+@keyframes rotate360 {
+  to { transform: rotate(360deg); }
+}
+
+.choice:hover{
+    box-shadow: 0px 0px 3em 0px rgba(73,159,104,1);
+    transition: .5s ease;
+}
+
+.choice-label {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.choice-field {
+    font-size: 1.25rem;
+    width: 100%;
+    margin: 0 auto 1em;
+}
+
+.choose-button {
+    font-size: 1rem;
+    margin: 0 auto;
+    background-color: #161925;
+}
+
+#choices {
+    padding: 0.25em;
+    text-align: center;
+    width:50%;
+}
+
+#result {
+    margin: 1em auto;
+    font-size: 2em;
+}
+
+@media (max-width: 576px) {
+    body {
+        background-color: #fafafa;
+    }
+    .landing {
+        padding:1em;
+    }
+    .landing-heading {
+        font-size:1rem;
+    }
+
+    .logo-text {
+        font-size: 1.2rem;
+    }
+    .navbar-toggler-icon {
+        width: 1em;
+        height:1em;
+    }
+    .card {
+        height: 70vh;
+    }
+    .card img {
+        height:70%;
+        width:auto;
+    }
+
+    h2 {
+        font-size:1.4rem;
+    }
+
+    h3 {
+        font-size:1.3rem;
+    }
+}
+
+@media (max-width: 355px) {
+    .logo-text {
+        font-size: .75rem;
+    }
+    .navbar-toggler-icon {
+        width: .75em;
+        height:.75em;
+    }
+    .card {
+        height: 50vh;
+    }
+}

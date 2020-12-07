@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Coin
+{% endblock %}
+
+{% block main %}
+
+    <div class="container">
+        <div class="d-flex justify-content-center heading-image"><img class="rotate" src="static/images/HeadsorTails.png" height=160px width=auto /></div>
+        <form action="coin" method="POST">
+            <div class= "form-group row">
+                <div class="col-12 col-sm-6 mx-auto choice">
+                    <div>
+                        <label for="formHeads" class="choice-label">Heads:</label>
+                        <input class="form-control choice-field " id="formHeads" name="formHeads" autocomplete="off" type="text" placeholder='"Go to the beach."'>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-6 mx-auto choice">
+                    <div>
+                        <label for="formTails" class="choice-label">Tails:</label>
+                        <input class="form-control choice-field " id="formTails" name="formTails" autocomplete="off" type="text" placeholder='"Go to the park."'>
+                    </div>
+                </div>
+            </div>
+            <div class= "form-group row">
+                <div class="col-12 d-flex justify-content-center mx-auto">
+                    <input type="submit" class="btn btn-dark choose-button" value="Flip Coin">
+                </div>
+            </div>
+        </form>
+    </div>
+
+{% endblock %}

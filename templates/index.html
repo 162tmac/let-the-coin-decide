@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+
+{% block title %} Let the Coin Decide {% endblock %}
+
+{% block main %}
+
+    <section class="index-content">
+        <div class="index-heading">
+            <h2>
+                Welcome to Let the Coin Decide.
+                <br />
+                Please choose how you'd like to decide:
+            </h2>
+        </div>
+        <div class="row">
+            <div class="card-deck">
+                <div class="card mb-4">
+                    <img src="static/images/coinicon.png" class="card-img-top img-fluid"/>
+                    <div class="card-block p-2">
+                        <h3 class="card-title">Flip a coin</h3>
+                        <p>Flip a coin and let it decide between 2 outcomes.</p>
+                        <a href="/coin" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img src="static/images/dice.png" class="card-img-top img-fluid"/>
+                    <div class="card-block p-2">
+                        <h3 class="card-title">Roll a dice</h3>
+                        <p>Roll a dice and let it decide between 6 outcomes.</p>
+                        <a href="/dice" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="w-100 d-none d-sm-block d-md-none">
+                    <!-- wrap every 2 on sm-->
+                </div>
+                <div class="card mb-4">
+                    <img src="static/images/questions.png" class="card-img-top img-fluid"/>
+                    <div class="card-block p-2">
+                        <h3 class="card-title">Custom Decider</h3>
+                        <p>
+                            Give the number of outcomes and the decider will make a
+                            random decision.
+                        </p>
+                        <a href="/custom" class="stretched-link"></a>
+                    </div>
+                </div>
+                <div class="card mb-4">
+                    <img src="static/images/8ball.png" class="card-img-top img-fluid"/>
+                    <div class="card-block p-2">
+                        <h3 class="card-title">Ask the Magic 8-Ball</h3>
+                        <p>Ask advice from the magic 8-Ball.</p>
+                        <a href="/ball" class="stretched-link"></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{% endblock %}
