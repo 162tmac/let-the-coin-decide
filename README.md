@@ -6,6 +6,8 @@
     description: A web app that helps you make decsions by asking for input for a number of outcomes and selecting a random outcome.
     app name: Let The Coin Decide
 
+A live version of the site can be found [here](https://let-the-coin-decide.herokuapp.com/).
+
 ## Summary
 
 This is a Flask web app that is built with HTML, CSS, Bootstrap and Python.
